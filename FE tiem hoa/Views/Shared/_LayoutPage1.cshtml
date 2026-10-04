@@ -1,0 +1,257 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.css" />
+    <style>
+        #header {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            align-items: center;
+            border:1px solid;
+        }
+
+        #icon {
+            display: flex;
+            justify-content: space-between;
+            border-radius: 50%;
+        }
+
+        .fm-menu {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            margin: 20px;
+        }
+
+        .banner {
+            background-size: cover;
+            background-position: center;
+            margin: 10px;
+        }
+
+        #search {
+            text-align: center;
+        }
+
+        #Se {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        #search-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #search-input {
+            width: 300px;
+            padding: 10px;
+            border: 1px solid;
+            border-radius: 5px 5px 5px 5px;
+        }
+
+        #search-button {
+            padding: 11px 20px;
+            background-color: black;
+            color: aliceblue;
+            border-radius: 5px 5px 5px 5px;
+            border: 1px solid;
+        }
+
+        #search-button-hover {
+            background-color: fuchsia;
+        }
+
+        #main-menu {
+            display: flex;
+            align-content: center;
+            justify-content: center;
+        }
+
+        .fm-mn {
+            list-style-type: none;
+            text-decoration: none;
+            padding: 10px;
+            font-weight: bold;
+            color: black;
+            padding: 20px;
+            margin: 10px;
+            background: linear-gradient(45deg,#f226b7,#fc64ee,aliceblue);
+            border-radius: 5px;
+        }
+
+        .box-pro {
+            background-color: aliceblue;
+            padding: 15px;
+            margin: 10px;
+            text-align: center;
+            width: 200px;
+            height: 300px;
+            border-radius: 5px;
+        }
+
+        #list-pro {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .fm-img-pro {
+            width: 150px;
+            height: 100px;
+            border-radius: 5px;
+        }
+
+        #he-box {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .fa-cart-shopping {
+            font-size: 24px;
+        }
+
+        .cart {
+            position: relative;
+        }
+
+        .car-count {
+            position: absolute;
+            top: -5px;
+            right: -5px;
+            background-color: blue;
+            color: white;
+            font-size: 12px;
+            padding: 2px 6px;
+            border-radius: 50%;
+        }
+
+        #footer {
+            background: linear-gradient(45deg,aliceblue,white,snow);
+            padding: 30px;
+            border-radius: 5px;
+            border:1px solid;
+        }
+
+        .fm-box-pro {
+            padding: 10px;
+            background-color: black;
+            border-radius: 5px;
+            font-weight: bold;
+            color: snow;
+            font-size: 20px;
+        }
+        #Container{
+            margin-bottom:20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div id="icon">
+            <i class="fa-brands fa-cotton-bureau"> FlowerShop</i>
+
+        </div>
+        <div id="menu">
+            <a href="#" class="fm-menu">Trang chủ</a>
+            <a href="#" class="fm-menu">Sản phẩm</a>
+            <a href="#" class="fm-menu">Cửa hàng</a>
+            <a href="#" class="fm-menu">Liên hệ</a>
+        </div>
+        <div class="cart">
+            <a href="giohang.html"></a>
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="car-count">0</span>
+        </div>
+    </div>
+    <div class="banner">
+        <img src="~/images/bannerhoa1.png" style="width:100%;height:300px" />
+    </div>
+    <div id="Container">
+        <div id="search">
+            <div id="Se">
+                <h2>Tìm Kiếm Hoa Bạn Muốn</h2>
+            </div>
+            <div id="search-content">
+                <input type="text" id="search-input" placeholder="Nhập từ khóa...." />
+                <button id="search-button">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+        </div>
+        <div id="main-menu">
+            <a href="#" class="fm-mn">Hoa tươi</a>
+            <a href="#" class="fm-mn">Hoa tang lễ</a>
+            <a href="#" class="fm-mn">Hoa đám cưới</a>
+        </div>
+        <div id="content">
+            <div id="he-box">
+                <h3>HOA ĐẶT NHIỀU NHẤT</h3>
+            </div>
+            <div id="list-pro">
+                <div class="box-pro">
+                    <p>
+                        <img src="~/images/red rose.jpg" class="fm-img-pro" />
+                    </p>
+                    <h3>Red Rose</h3>
+                    <p>Giá:1,100,000</p>
+                    <p class="fm-box-pro">Đặt hàng</p>
+                </div>
+                <div class="box-pro">
+                    <p>
+                        <img src="~/images/elegant.jpg" class="fm-img-pro" />
+                    </p>
+                    <h3>Elegant</h3>
+                    <p>Giá:1,650,000</p>
+                    <p class="fm-box-pro">Đặt hàng</p>
+                </div>
+                <div class="box-pro">
+                    <p>
+                        <img src="~/images/sunset.jpg" class="fm-img-pro" />
+                    </p>
+                    <h3>Sunset</h3>
+                    <p>Giá:1,240,000</p>
+                    <p class="fm-box-pro">Đặt hàng</p>
+                </div>
+                <div class="box-pro">
+                    <p>
+                        <img src="~/images/lan.jpg" class="fm-img-pro" />
+                    </p>
+                    <h3>Lan</h3>
+                    <p>Giá:1,220,000</p>
+                    <p class="fm-box-pro">Đặt hàng</p>
+                </div>
+                <div class="box-pro">
+                    <p>
+                        <img src="~/images/whiterose.jpg" class="fm-img-pro" />
+                    </p>
+                    <h3>White Rose</h3>
+                    <p>Giá:1,500,000</p>
+                    <p class="fm-box-pro">Đặt hàng</p>
+                </div>
+            </div>
+        </div>
+        @RenderBody()
+    </div>
+    <div id="footer">
+        <div>
+            <h4>Cửa Hàng</h4>
+            <p>424 Nguyễn Sỹ Sách,phường Tân Sơn,Quận Tân Bình,TP.HCM</p>
+        </div>
+        <div>
+            <h4>Liên Lạc</h4>
+            <p>Hotline:<i class="fa-solid fa-phone"></i>0971911900</p>
+            <p>Hotline:<i class="fa-solid fa-phone"></i>0987676363</p>
+            <p>Hotline:<i class="fa-solid fa-phone"></i>0733218711</p>
+        </div>
+    </div>
+</body>
+
+</html>
